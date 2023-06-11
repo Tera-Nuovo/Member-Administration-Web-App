@@ -1,0 +1,78 @@
+$primary-500: #b32c1d;
+$primary-600: #724712;
+$primary-700: #db823e;
+
+@import "@picocss/pico/scss/pico";
+
+.hover-row:hover {
+  background-color: $primary-500;
+  cursor: pointer;
+  max-height: 100px;
+  vertical-align: top;
+}
+
+.row {
+  max-height: 100px;
+  vertical-align: top;
+}
+
+.searchResult {
+  max-height: fit-content;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+}
+
+.custom-edit-grid {
+  display: grid;
+  grid-template-columns: 1rem 7rem 1fr 1rem;
+}
+
+.editModeField {
+  height: 2rem !important;
+}
+
+.editModeFieldBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem !important;
+  width: 7rem !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.multiField-grid {
+  display: grid;
+  grid-template-columns: 70% 2rem auto;
+}
+
+.btn-red {
+  background-color: $red-500;
+}
+
+.error {
+  color: $red-500;
+}
+
+.theme-switch {
+  &:checked {
+    --switch-background-color: #ffffff;
+    --switch-checked-background-color: #000000;
+    --switch-color: #ffffff;
+  }
+
+  &:not(:checked) {
+    --switch-background-color: #ffffff;
+    --switch-checked-background-color: #000000;
+    --switch-color: #000000;
+  }
+}
+
+.logo {
+  max-height: 2rem;
+}
